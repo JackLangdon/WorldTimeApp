@@ -22,7 +22,7 @@ class WorldTime {
 
       // Get properties
       String datetime = data['datetime'];
-      String offset = data['utc_offset'].substring(1, 3);
+      String offset = data['utc_offset'].substring(0, 3);
 
       // Create datetime object
       DateTime now = DateTime.parse(datetime);
